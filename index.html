@@ -2,14 +2,60 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>GW2</title>
 	<link rel="stylesheet" href="style.css">
+	<title>Arte de calle</title>
+	<script type="text/javascript">
+	function MuestraInicio(){
+        var contenedor = document.getElementById("inicio");
+        contenedor.style.display = "block";
+        contenedor=document.getElementById("conciertos");
+        contenedor.style.display = "none";
+    }
+    function MuestraConciertos(){
+        var contenedor = document.getElementById("conciertos");
+        contenedor.style.display = "block";
+        contenedor=document.getElementById("inicio");
+        contenedor.style.display = "none";
+    }
+    
+    </script>
 </head>
 <body>
+	<div id="cabecera">
+		<img src="images/pattern1.jpg" height="150" width="900">
+	</div>
+	<div class="container">
+		<nav>
+			<ul>
+				<li><a href=#inicio onclick="MuestraInicio()">Inicio</a></li>
+				<li><a href=#conciertos onclick="MuestraConciertos()">Conciertos</a></li>
+				<li><a href="">Artistas</a></li>
+			</ul>
+		</nav>
+		<div id="inicio">
+			<section>
+				<header>Cabecera de seccion</header>
+				Tenemos una filosofía clara...
 
-	<div class="menu">Inicio</div>
-	<div class="menu">Ayuda</div>
-	<div class="menu">Soporte</div>
-	
+			​
+			"Arte de Calle" nace de una única idea, la de promover el hip-hop en la zona. <br>
+
+			El fin de este festival es, por una parte, dedicarle una tarde a este movimiento que para muchos es ya nuestra forma de vida, y por otra, demostrar a todo el mundo que las palabras que definen este movimiento no son bandalismo y delincuencia, sino respeto y unión. Con estos valores, sobra decir que queda fuera toda discriminación de cualquier tipo, queremos llegar a todos los públicos y a todas las edades. <br>
+
+			Pero lo que más nos diferencia quizá, es que no hacemos esto por dinero, lo hacemos por amor a esta cultura y por diversión, sin cobrar ni un sólo euro, y eso nos hace únicos. <br>
+
+			 
+
+			Al fin y al cabo, como ya rapeó Falsalarma: "Por orgullo perdemos bastante, mucho, no hace falta tanto escudo cuando somos uno, punto."<br>
+			</section>
+		</div>
+		<div id="conciertos">
+			<section>
+				<header>Actividades</header>
+				Conciertos, exibiciones, batalla de gallos <br>
+			</section>
+		</div>
+	</div>
+
 </body>
 </html>
