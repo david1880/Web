@@ -8,34 +8,50 @@
 	function MuestraInicio(){
         var contenedor = document.getElementById("inicio");
         contenedor.style.display = "block";
-        contenedor=document.getElementById("conciertos");
+        contenedor=document.getElementById("actividades");
+        contenedor.style.display = "none";
+        contenedor=document.getElementById("contacto");
         contenedor.style.display = "none";
     }
-    function MuestraConciertos(){
-        var contenedor = document.getElementById("conciertos");
+    function MuestraActividades(){
+        var contenedor = document.getElementById("actividades");
         contenedor.style.display = "block";
         contenedor=document.getElementById("inicio");
         contenedor.style.display = "none";
+        contenedor=document.getElementById("contacto");
+        contenedor.style.display = "none";
     }
+    function MuestraContacto(){
+        var contenedor = document.getElementById("contacto");
+        contenedor.style.display = "block";
+        contenedor=document.getElementById("inicio");
+        contenedor.style.display = "none";
+        contenedor=document.getElementById("actividades");
+        contenedor.style.display = "none";
+    }
+
     
     </script>
 </head>
 <body>
 	<div id="cabecera">
-		<img src="images/pattern1.jpg" height="150" width="900">
+		<div id="logo">
+			<img src="images/logo.png" height="100px">
+		</div>
+		<div id="titulo">
+			<img src="images/artedecalle.png" height="150px">
+		</div>
 	</div>
 	<div class="container">
 		<nav>
-			<ul>
-				<li><a href=#inicio onclick="MuestraInicio()">Inicio</a></li>
-				<li><a href=#conciertos onclick="MuestraConciertos()">Conciertos</a></li>
-				<li><a href="">Artistas</a></li>
-			</ul>
+				<li id="botones"><a href=#inicio onclick="MuestraInicio()">Inicio</a></li>
+				<li id="botones"><a href=#actividades onclick="MuestraActividades()">Actividades</a></li>
+				<li id="botones"><a href=#contacto onclick="MuestraContacto()">Contacto</a></li>
 		</nav>
 		<div id="inicio">
 			<section>
-				<header>Cabecera de seccion</header>
-				Tenemos una filosofía clara...
+				<header>Tenemos una filosofía clara...</header>
+				
 
 			​
 			"Arte de Calle" nace de una única idea, la de promover el hip-hop en la zona. <br>
@@ -49,10 +65,36 @@
 			Al fin y al cabo, como ya rapeó Falsalarma: "Por orgullo perdemos bastante, mucho, no hace falta tanto escudo cuando somos uno, punto."<br>
 			</section>
 		</div>
-		<div id="conciertos">
+		<div id="actividades">
 			<section>
 				<header>Actividades</header>
-				Conciertos, exibiciones, batalla de gallos <br>
+				<div class="actividad">
+					<header>Conciertos</header>
+					Hemos tenido grandes artistas como por ejemplo Molto Grime o Poker Posse. 
+				</div>
+				<div class="actividad">
+					<header>Beat box</header>
+					 Algunos artistas no necesitan más que su propia voz para crear ritmos increibles... Disfruta con la exhibición de beatbox a cargo del gran Compay23.
+				</div>
+				<div class="actividad">
+					<header>Batalla de gallos</header>
+					Competición de rima improvisada. ¿Eres capaz de derrotar a alguien con tan sólo palabras? 
+				</div>
+				<div class="actividad">
+					<header>Exhibición de break dance</header>
+					Breakdance, popping, hip-hop...  todos los estilos callejeros tienen cabida en este festival. ¡Anímate a marcarte unos pasos!
+				</div>
+				<div class="actividad">
+					<header>Exhibición de tricking</header>
+					Las exhibiciones a cargo de Family Tricks Team  son una combinación de saltos, acrobacias y artes marciales que te dejarán con la boca abierta.
+				</div>
+			</section>
+		</div>
+		<div id="contacto">
+			<section>
+				<header>Participa!!</header>
+				Para cualquier duda o sugerencia no dudes ponerte en contacto con nosotros a través de nuestro correo electronico: <a href="mailto:festival.artedecalle@gmail.com">festival.artedecalle@gmail.com</a>
+
 			</section>
 		</div>
 	</div>

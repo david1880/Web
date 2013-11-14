@@ -5,14 +5,10 @@
 	margin-top: 50px;
 
 }
-nav{
-	position: absolute;
-	left: 0px;
-	width: 200px;
-}
+
 section{
 	max-width: 720px;
-	margin-left: 200px;
+	
 	margin-bottom: 50px;
 	border: solid #BDBDBD 5px;
 /*	box-sizing: border-box;*/
@@ -27,22 +23,124 @@ body{
 	margin-bottom: 120px;
 }
 header{
-	font-size: 24px;
+	font-size: 20px;
 	font-family: sans-serif;
 	padding: 5px;
 	padding-left: 10px;
 }
+.actividad{
+	max-width: 720px;
+	
+	margin-bottom: 10px;
+	border: solid #BDBDBD 5px;
+/*	box-sizing: border-box;*/
+	padding: 10px;
+	border-radius: 10px;
+	background-color: #E6E6E6;
+
+	font-size: 16px;
+	font-family: sans-serif;
+}
 
 #cabecera{
-	
-	
+	float: top;
+	background: url(images/pattern1.jpg);
+	background-size: 900px 150px;
 	max-width: 900px;
 	max-height: 150px;
 	margin: 0 auto;
 }
+#botones{
+	width: 160px;
+	border: solid #BDBDBD 5px;
+	border-radius: 8px;
+	background-color: #E6E6E6;
+	color: black;
+}
+
+
 #inicio{
+	display: block;
+}
+#actividades{
 	display: none;
 }
-#conciertos{
+#contacto{
 	display: none;
+}
+
+#titulo{
+	position: relative;
+	left: 120px;
+	top: -110px;
+}
+
+#logo{
+	float: right top;
+	right: 10;
+	height: 100px;
+	width: 100px;
+    animation-name: rotateinfinite;		
+    animation-timing-function: linear;	
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+}
+
+@keyframes rotateinfinite {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(-360deg);
+  }
+}
+
+@media screen and (min-width:400px) {
+	nav{
+	float: left;
+	width: 160px;
+	text-align: center;
+	font-family: sans-serif;
+	list-style: none;
+	
+}
+	section{
+		margin-left: 200px;
+	}
+}
+
+@media screen and (max-width:399px) {
+  nav li {
+    display: inline;
+  }
+  nav{
+  	width: 400px;
+  }
+  
+}
+  section{
+  	margin-top: 50px;
+  }
+}
+
+a:link   
+{   
+ text-decoration:none;   
+}   
+#botones a:link{
+color: black;
+}
+
+#botones a:visited{
+color: black;
+}
+
+#botones a:hover{
+color: #BDBDBD;
+}
+
+#botones a:active{
+
+color: #fff;
+
 }
